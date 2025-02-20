@@ -33,3 +33,18 @@
 // Check if a binary tree is symmetric.
 // Find the top k frequent elements in an array.
 // Implement a prefix sum array for efficient range sum queries.
+
+
+
+function isPrime(num){
+  if(num==1){
+    return true
+  }
+  for(let i=2;i<Math.sqrt(num);i++){
+     if(num%i==0){
+        return false
+     }
+  }
+  return true
+}
+console.log(isPrime(13))

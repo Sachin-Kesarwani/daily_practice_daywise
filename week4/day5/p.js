@@ -68,21 +68,20 @@
 
 
 // function maxSawBlade(trees , requiredWood){
-// let low = 0;
-// let high=Math.max(...trees)
-// let answer=0
-// while(low<=high){
-//     let mid = Math.floor((low + high) / 2);
-//     let woodCollected = trees.reduce((sum, tree) => sum + Math.max(0, tree - mid), 0);
-//     console.log(woodCollected)
-//     if (woodCollected >= requiredWood) {
-//         answer = mid; // Try a higher cut
-//         low = mid + 1;
-//       } else {
-//         high = mid - 1; // Reduce cut height
-//       }
-// }
-// return answer;
+//   let low=0;
+//   let high = Math.max(...trees);
+//   let hieghtofblade=0
+//   while(low<high){
+//     let mid= Math.floor((low+high)/2)
+//     let remain = trees.reduce((acc,tree)=>acc+Math.max(0,(tree-mid)),0)
+//     if(remain>=requiredWood){
+//         hieghtofblade=remain
+//         low=mid+1
+//     }else{
+//         high=mid-1
+//     }
+//   }
+//   return hieghtofblade
 // }
 
 // console.log(maxSawBlade([10, 15, 17, 20]  , 7) ,"sjsj")
@@ -120,3 +119,6 @@
 // console.log(canBobGiveChange([5, 5, 5, 10, 20 , ])); // "YES"
 // console.log(canBobGiveChange([5, 5, 10, 10, 20])); // "NO"
 // console.log(canBobGiveChange([5, 5, 5, 5, 10, 5, 10, 20])); // "YES"
+
+
+// console.log(...undefined)

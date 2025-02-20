@@ -264,3 +264,31 @@
 // }
 
 // console.log(groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]))
+
+
+// 26. Find All Prime Numbers up to N
+// Question: Generate all prime numbers up to a given number n.
+// Input: 10
+// Output: [2, 3, 5, 7]
+
+// function getListofPrimes(n){
+//  let ans=[];
+//  for(let i=1;i<=n;i++){
+//     if(isPrime(i)){
+//         ans.push(i)
+//     }
+//  }
+//  return ans
+// }
+// function isPrime(num){
+//     if(num<2){
+//         return false
+//     }
+//   for(let i=2;i<=Math.sqrt(num);i++){
+//     if(num%i==0){
+//         return false
+//     }
+//   }
+//   return true
+// }
+// console.log(getListofPrimes(10))
