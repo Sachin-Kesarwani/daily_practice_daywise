@@ -1,0 +1,47 @@
+/* SnakeGame.css */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .board {
+    display: grid;
+    border: 1px solid #333;
+    background-color: #f0f0f0;
+  }
+  
+  .cell {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  .snake {
+    background-color: #2ecc71;
+    border-radius: 4px;
+  }
+  
+  .food {
+    background-color: #e74c3c;
+    border-radius: 50%;
+  }
+  
+  .game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
